@@ -1,0 +1,58 @@
+nomarch
+------------------------------------------
+nomarch lists/extracts/tests '.arc' archives. (It also handles '.ark'
+files, they're exactly the same.) This is a *very* outdated file
+format which should never be used for anything new, but unfortunately,
+you can still run into it every so often (especially if you mess about
+with old CP/M stuff).
+
+Runtime requirements:
+  cygwin-1.5.25-7
+
+Build requirements:
+  binutils-20060817-1
+  cygport-0.3.8-1
+  gcc-core-3.4.4-3
+  make-3.81-1
+
+Canonical website:
+  http://rus.members.beeb.net/nomarch.html
+
+Canonical download:
+  ftp://ftp.ibiblio.org/pub/Linux/utils/compress/
+
+-------------------------------------------
+
+Build instructions:
+  unpack nomarch-1.4-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./nomarch-1.4-X.cygport all
+
+This will create:
+  /usr/src/nomarch-1.4-X-src.tar.bz2
+  /usr/src/nomarch-1.4-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/nomarch.exe
+  /usr/share/doc/nomarch-1.4/COPYING
+  /usr/share/doc/nomarch-1.4/ChangeLog
+  /usr/share/doc/nomarch-1.4/NEWS
+  /usr/share/doc/nomarch-1.4/README
+  /usr/share/doc/nomarch-1.4/TODO
+  /usr/share/man/man1/nomarch.1.gz
+
+------------------
+
+Port Notes:
+
+----- version 1.4-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/

@@ -1,0 +1,8 @@
+category: Archive
+requires: cygwin
+sdesc: "ARC archive extractor"
+ldesc: "nomarch lists/extracts/tests '.arc' archives. (It also handles 
+'.ark' files, they're exactly the same.) This is a *very* outdated file 
+format which should never be used for anything new, but unfortunately, 
+you can still run into it every so often (especially if you mess about 
+with old CP/M stuff). "

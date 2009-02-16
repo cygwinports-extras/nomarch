@@ -1,0 +1,15 @@
+DESCRIPTION="ARC archive extractor"
+HOMEPAGE="http://rus.members.beeb.net/nomarch.html"
+SRC_URI="ftp://ftp.ibiblio.org/pub/Linux/utils/compress/${P}.tar.gz"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake
+}
+
+src_install() {
+	cd ${B}
+	dobin *.exe
+	doman *.1
+}
